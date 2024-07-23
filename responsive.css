@@ -43,6 +43,10 @@
   .banner-content {
     padding: 240px 45px 36px;
   }
+  .numbers {
+    grid-row-gap: 30px;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 767px) {
   .logo {
