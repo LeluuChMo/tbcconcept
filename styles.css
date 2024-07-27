@@ -121,6 +121,7 @@ header {
   text-decoration: none;
   transition: color 0.25s ease-in-out;
   display: flex;
+  cursor: pointer;
 }
 .arrow-icon {
   z-index: 2;
@@ -250,6 +251,12 @@ header {
   bottom: 32px;
   right: 32px;
 }
+.button-text {
+  font-family: "tbc-medium", sans-serif;
+}
+.flex-cookies {
+  display: flex;
+}
 .button-trigger {
   width: 56px;
   height: 56px;
@@ -363,11 +370,11 @@ p {
   width: 24px;
   height: 24px;
 }
-.banner-button {
+.banner-button a {
   grid-column-gap: 6px;
   color: #fff;
   text-transform: uppercase;
-  background-color: #3295ce;
+  background-image: linear-gradient(15deg, #001682, #3240e5);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
@@ -379,6 +386,11 @@ p {
   transition: all 0.25s ease-in-out;
   display: flex;
   position: relative;
+}
+.banner-button a:hover {
+  background-image: none;
+  background-color: #007aff;
+  transition: 0.5s;
 }
 .button-icon {
   z-index: 2;
@@ -394,19 +406,7 @@ p {
   transition: transform 0.6s ease-out;
   position: relative;
 }
-.button-hover {
-  grid-column-gap: 6px;
-  background-image: linear-gradient(15deg, #001682, #3240e5);
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.25s ease-in-out;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
+
 .banner-img,
 banner-wrapper {
   width: 100%;
@@ -423,7 +423,7 @@ banner-wrapper {
   overflow: hidden;
 }
 .banner-img {
-  height: 100%;
+  height: 102%;
   -o-object-fit: cover;
   object-fit: cover;
   transition: all 0.25s ease-in-out;
@@ -463,17 +463,8 @@ banner-wrapper {
   grid-auto-columns: 1fr;
   display: grid;
 }
-.card3 {
+.card2 {
   grid-area: span 2 / span 1 / span 2 / span 1;
-  min-height: 256px;
-
-  color: #fff;
-  background-color: #141719;
-  border-radius: 8px;
-
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
 }
 .grid-card {
   min-height: 256px;
@@ -486,6 +477,7 @@ banner-wrapper {
   text-decoration: none;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .grid-card-content {
   z-index: 2;
@@ -519,18 +511,25 @@ banner-wrapper {
 .white-arrow:hover {
   color: #555f62;
 }
-.button-text {
-  z-index: 2;
-  margin-top: 2px;
-  transition: transform 0.6s ease-out;
-  position: relative;
-  color: white;
+.button-icon {
+  color: #fff;
+  gap: 6px;
 }
-.button-text:hover {
-  color: #555f62;
+.button-icon:hover {
+  color: #6f787b;
+}
+.button-icon a:hover {
+  font-family: "tbc-bold", sans-serif;
+  text-transform: uppercase;
+  flex: none;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
   text-decoration: none;
+  transition: color 0.25s ease-in-out;
+  display: flex;
 }
-
 /* Section 4 */
 
 .numbers-section {
@@ -749,6 +748,9 @@ banner-wrapper {
   text-decoration: none;
   transition: background-position 0.25s ease-in-out;
   display: flex;
+}
+.app-button:hover {
+  background-color: #f9fafa;
 }
 
 /* Section 7 */
