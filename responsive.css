@@ -51,6 +51,12 @@
     grid-row-gap: 30px;
     flex-direction: column;
   }
+  .app-button {
+    display: none;
+  }
+  .app-mobile-button {
+    display: flex;
+  }
 }
 @media screen and (max-width: 767px) {
   .cookies-block {
@@ -94,9 +100,16 @@
     width: 100%;
     grid-row-gap: 28px;
   }
+  .get-app-img {
+    max-height: none;
+    position: static;
+  }
   .get-app-buttons {
     width: 100%;
     margin-top: -4px;
+  }
+  .app-mobile-button {
+    flex: 1;
   }
   .footer {
     padding-top: 40px;
